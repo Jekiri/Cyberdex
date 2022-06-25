@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+    <header>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6V9WD7GKS"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-W6V9WD7GKS');
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cyberdex</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2a9d36becc.js" crossorigin="anonymous"></script>
+    </header>
+
+    <body>
+        <!----Main page---->
+        <section class="header">
+                <img src="Images/Logo.png" alt="logo" class="logo">
+            </a>
+            <nav>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+        <div class="textbox">
+            <h1>Welcome to Cyberdex</h1>
+            <p>The simple solution to cyber security</p>
+            <a href="login.html" class="login-link">Login</a>
+        </div>
+        </section>
+
+        <!---------about--------->
+        <section class="about">
+            <h1>About us</h1>
+            <div class="row">
+                <div class="about-col">
+                    <h3>Our story</h3>
+                    <p>One word that normally comes to mind when thinking of network security: complicated.<br>Cyberdex strives to eliminate this stigma. We are a team of driven, passionate and motivated minds. Cyberdex is still a new company, being created in 2022 but, with your help, Cyberdex will be a household name.</p>
+                </div>
+                <div class="about-col">
+                    <h3>Our mission</h3>
+                    <p>Cyberdex was created to provide network security without sacraficing simplicity. At Cyberdex we provide full service without the confusion.</p>
+                </div>
+                <div class="about-col">
+                    <h3>Our promise</h3>
+                    <p>Cyberdex promises to give business owners peace of mind with pride, authenticity and honesty.</p>
+                </div>
+            </div>
+        </section>
+
+        <!---------Services--------->
+        <section class="services">
+            <h1>Services we offer</h1>
+            <div class="row">
+                <div class="services-col">
+                    <h3>Penetration testing</h3>
+                    <p>We offer top of the line penetration testing services at the lowest costs possible. Contact us today for a free quote.</p>
+                    <a href="quote.html" class="quote-button">Book a quote!</a>
+                </div>
+                <div class="services-col">
+                    <h3>Network analysis</h3>
+                    <p>Encountering slow connections? Tired of dealing with wait times? Look no further, Cyberdex provides top notch network anlysis for all your business needs.</p>
+                    <a href="quote.html" class="quote-button">Book an appointment!</a>
+                </div>
+                <div class="services-col">
+                    <h3>Consulting</h3>
+                    <p>Not sure what services your business will require? Feel free to contact our services team and setup a consultation meeting today!</p>
+                    <a href="quote.html" class="quote-button">Book a meeting!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="hiring">
+            <h1>We hire globally!<br>Apply to Cyberdex today!</h1> 
+            <a href="" class="apply-button">Apply</a>
+            
+        </section>
+
+
+
+        <!---------Footer--------->
+        <section class="footer">
+            <h4>Contact us</h4>
+            <div class="contact-icons">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>Please note we are currently not accepting bookings.<br>Thank you for your understanding.</p>
+        </section>
+
+
+
+        <!-----JavaSctipt for toggle menu----->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+</html>
